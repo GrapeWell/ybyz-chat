@@ -61,7 +61,7 @@ const onUserIn = (updateUsers) => ({ users, sid }) => {
 }
 
 export const createSocket = (room: string, nickname: string, updateUsers: (users: string[]) => void) => {
-  const socket = io('http://localhost:3000')
+  const socket = io('http://162.14.123.224:3000')
 
   // 加入房间，开始流程
   socket.emit('join_room', { room, nickname })
